@@ -1,0 +1,320 @@
+@font-face {
+    font-family: "Ogg Light";
+    src: url("/fonts/OggLight.otf") format("otf"), 
+    url("/fonts/OggLight.ttf") format("ttf"),
+    url("/fonts/OggLight.woff") format("woff"),
+    url("/fonts/OggLight.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Ogg Light Italic";
+    src: url("/fonts/OggLightItalic.otf") format("otf"),
+        url("/fonts/OggLightItalic.ttf") format("ttf"),
+        url("/fonts/OggLightItalict.woff") format("woff"),
+        url("/fonts/OggLightItalic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Ogg Medium";
+    src: url("/fonts/OggMedium.otf") format("otf"),
+        url("/fonts/OggMedium.ttf") format("ttf"),
+        url("/fonts/OggMedium.woff") format("woff"),
+        url("/fonts/OggMedium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Ogg Medium Italic";
+    src: url("/fonts/OggMediumItalic.otf") format("otf"),
+        url("/fonts/OggMediumItalic.ttf") format("ttf"),
+        url("/fonts/OggMediumItalic.woff") format("woff"),
+        url("/fonts/OggMediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Ogg Regular";
+    src: url("/fonts/OggRegular.otf") format("otf"),
+        url("/fonts/OggRegular.ttf") format("ttf"),
+        url("/fonts/OggRegular.woff") format("woff"),
+        url("/fonts/OggRegular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Trade Gothic LT Extended";
+    src: url("/fonts/Trade Gothic LT Extended.otf") format("otf"),
+        url("/fonts/Trade Gothic LT Extended.ttf") format("ttf"),
+        url("/fonts/Trade Gothic LT Extended.woff") format("woff"),
+        url("/fonts/Trade Gothic LT Extended.woff2") format("woff2");
+}
+
+/*-------normalize-------------*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Removing padding */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Removing margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Set the basic default settings for the body */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+/* Remove the default styling for all ul and li that have a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Elements a that don't have a class are reset to default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+a { 
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Indicate a clear frequency in the data flow for article */
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Inheriting fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    outline: none;
+}
+
+/*------------------*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Trade Gothic LT Extended";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.wrapper {
+    margin: 100px auto;
+    max-width: 1440px;
+}
+
+
+
+.philosophy__content {
+    padding: 0 10px;
+}
+
+.philosophy__tag {
+    font-family: "Trade Gothic LT Extended";
+    opacity: 0.55;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.philosophy__title {
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 26px;
+    font-family: 'Ogg Light';
+    font-weight: 300;
+}
+
+.philosophy__title span { 
+    color: #71870E;
+}
+
+.philosophy__about {
+    font-size: 16px;
+    line-height: 28px;
+    opacity: 0.85;
+    font-family: "Trade Gothic LT Extended";
+
+    max-width: 100%;
+    margin-bottom: 51px;
+}
+
+.philosophy__about p:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.philosophy__btn {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    color: #CD9A3D;
+
+    display: inline-flex;
+    align-items: center;
+    float: right;
+    margin-bottom: 26px;
+
+}
+.philosophy__btn span { 
+    display: block;
+    background-color: #CD9A3D;
+    width: 70px;
+    height: 2px;
+
+    margin-right: 31px;
+}
+
+.philosophy__images {
+    position: relative;
+}
+
+.philosophy__image-small {
+    position: absolute;
+    top: 278px;
+    right: -139px;
+    z-index: 2;
+}
+.philosophy__tag_green { 
+    text-align: center;
+    margin-top: 225px;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    color: #71870E;
+    opacity: 0.8;
+}
+
+.philosophy__image-big { 
+    width: 100vw;
+    max-height: 506px;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 767px) {
+    .philosophy { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6.66vw;
+    }
+    .philosophy__image-big {
+        width: 464px;
+        height: 634px;
+    }
+  
+    .philosophy__content {
+        padding: 0px;
+    }
+    .philosophy__image-small {
+        position: absolute;
+        top: 208px;
+        left: 343px;
+        z-index: 2;
+    }
+    .philosophy__title {
+        font-size: 60px;
+        line-height: 64px;
+        text-align: right;
+        margin-bottom: 100px;
+    }
+    .philosophy__about {
+        max-width: 396px;
+        margin-bottom: 71px;
+        margin-left: 150px;
+    }
+    .philosophy__btn { 
+        float: left;
+        margin-bottom: 0;
+    }
+    .philosophy__tag { 
+        display: block;
+    }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media  (min-width: 480px) and (max-width: 767px) {
+    .philosophy__tag_green {
+            display: none;
+        }
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+        .philosophy__image-big {
+            width: 100%;
+            max-height: auto;
+        }
+
+        .philosophy__image-small {
+        top: 75%;
+        right: 0;
+        width: 55%;
+    }
+                .philosophy__tag_green {
+                    display: none;
+                }
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+
+}
